@@ -6,6 +6,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 import { ACHIEVEMENTS } from '../data';
+import celebrationImg from '../assets/images/IMG_20260721_184109.jpg';
 
 function Counter({ end, suffix }: { end: number; suffix: string }) {
   const [count, setCount] = useState(0);
@@ -41,8 +42,18 @@ function Counter({ end, suffix }: { end: number; suffix: string }) {
 
 export default function Achievements() {
   return (
-    <section className="py-10 md:py-12 bg-primary text-white">
-      <div className="max-w-[1440px] mx-auto px-4">
+    <section className="relative py-12 md:py-20 bg-primary text-white overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <img 
+          src={celebrationImg} 
+          alt="Celebration" 
+          className="w-full h-full object-cover grayscale"
+        />
+        <div className="absolute inset-0 bg-primary/80 backdrop-blur-[2px]"></div>
+      </div>
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-12 text-center">
           {ACHIEVEMENTS.map((item, idx) => (
             <motion.div 
