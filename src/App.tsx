@@ -8,7 +8,6 @@ import Achievements from './components/Achievements';
 import AboutSection from './components/AboutSection';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
-import Admission from './components/Admission';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -28,7 +27,6 @@ export default function App() {
         <AboutSection />
         <Testimonials />
         <Gallery />
-        <Admission />
         <FAQ />
         <Contact />
       </main>
