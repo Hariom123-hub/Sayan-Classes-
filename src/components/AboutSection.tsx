@@ -6,6 +6,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2, Award, Users, BookOpen } from 'lucide-react';
+import founderImg from '../assets/images/IMG_20260721_184050.jpg';
 
 export default function AboutSection() {
   const highlights = [
@@ -28,7 +29,7 @@ export default function AboutSection() {
           >
             <div className="relative z-10 rounded-[32px] overflow-hidden shadow-2xl border-8 border-white">
               <img 
-                src="/IMG_20260721_184050.jpg" 
+                src={founderImg} 
                 alt="Founder Sayan Sir" 
                 className="w-full h-auto aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700"
               />

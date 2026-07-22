@@ -24,6 +24,11 @@ import {
   Phone
 } from 'lucide-react';
 
+import imgClassroom from './assets/images/IMG_20260721_184050.jpg';
+import imgCelebration from './assets/images/IMG_20260721_184109.jpg';
+import imgCampus from './assets/images/IMG_20260721_184136.jpg';
+import imgAdmission from './assets/images/Screenshot_2026-07-21-18-36-30-79_96b26121e545231a3c569311a54cda96.jpg';
+
 import { Course } from './types';
 
 export const COURSES: Course[] = [
@@ -692,15 +697,15 @@ export const FAQS = [
   },
   { 
     question: 'How can I contact the institute?', 
-    answer: 'You can call or WhatsApp us at 080176 79825, or visit us at J44J+FWJ, College Para, Raiganj, West Bengal.' 
+    answer: 'You can call or WhatsApp us at +91 80176 79825, or visit us at J44J+FWJ, College Para, Raiganj, West Bengal.' 
   },
 ];
 
 export const GALLERY_IMAGES = [
-  { id: 1, title: 'Classroom Session', category: 'Classroom', url: '/IMG_20260721_184050.jpg' },
-  { id: 2, title: 'Success Celebration', category: 'Success', url: '/IMG_20260721_184109.jpg' },
-  { id: 3, title: 'Institute Atmosphere', category: 'Campus', url: '/IMG_20260721_184136.jpg' },
-  { id: 4, title: 'Admission Open', category: 'Events', url: '/Screenshot_2026-07-21-18-36-30-79_96b26121e545231a3c569311a54cda96.jpg' },
+  { id: 1, title: 'Classroom Session', category: 'Classroom', url: imgClassroom },
+  { id: 2, title: 'Success Celebration', category: 'Success', url: imgCelebration },
+  { id: 3, title: 'Institute Atmosphere', category: 'Campus', url: imgCampus },
+  { id: 4, title: 'Admission Open', category: 'Events', url: imgAdmission },
   { id: 5, title: 'Faculty Teaching', category: 'Teaching', url: 'https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=800' },
   { id: 6, title: 'Group Discussion', category: 'Students', url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800' },
 ];

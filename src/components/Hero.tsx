@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Phone, MessageCircle, CheckCircle, Award, BookOpen, Users } from 'lucide-react';
 import { BUSINESS_DETAILS } from '../constants';
+import heroBg from '../assets/images/IMG_20260721_184136.jpg';
 
 export default function Hero() {
   const features = [
@@ -15,7 +16,7 @@ export default function Hero() {
       {/* Background with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/IMG_20260721_184136.jpg" 
+          src={heroBg} 
           alt="Classroom Atmosphere" 
           className="w-full h-full object-cover"
         />
